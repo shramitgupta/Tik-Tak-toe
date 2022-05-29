@@ -37,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
         v.setImageResource(R.drawable.hammer);
         gameState[tag]=player;
         player=0;
-            Toast.makeText(this, tag+" hammer",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, tag+" cross",Toast.LENGTH_SHORT).show();
         }
         else{
             v.setImageResource(R.drawable.ss);
             gameState[tag]=player;
             player=1;
-            Toast.makeText(this, tag+" shield",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, tag+" zero",Toast.LENGTH_SHORT).show();
         }
         for(int i=0;i<winningStates.length;i++){
             if(gameState[winningStates[i][0]]==gameState[winningStates[i][1]] && gameState[winningStates[i][1]]==gameState[winningStates[i][2]] && gameState[winningStates[i][0]]>-1){
