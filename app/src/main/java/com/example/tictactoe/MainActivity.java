@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void load(View view){
-        ImageView v=(ImageView) view;
+        ImageView v=(ImageView) view;//nothig
         int tag=Integer.parseInt(v.getTag().toString());
         imageClicked=gameState[tag];
         if(isWinner==false && imageClicked==-1){
